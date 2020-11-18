@@ -133,7 +133,7 @@ namespace Foralla.Scheduler
             {
                 var linkedToken = linkedTokenSource.Token;
 
-                _logger.LogInformation($"Starting the the scheduler for {job.Name}.");
+                _logger.LogInformation($"Starting the scheduler for {job.Name}.");
 
                 while (!linkedToken.IsCancellationRequested && job.NextScheduledTime != null)
                 {
